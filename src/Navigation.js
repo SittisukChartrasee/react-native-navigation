@@ -9,6 +9,7 @@ import PropRegistry from './PropRegistry';
 const registeredScreens = {};
 const _allNavigatorEventHandlers = {};
 
+
 function registerScreen(screenID, generator) {
   registeredScreens[screenID] = generator;
   AppRegistry.registerComponent(screenID, generator);
